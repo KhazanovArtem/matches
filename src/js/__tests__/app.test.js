@@ -1,22 +1,20 @@
-import HealthBar from '../app';
+import SortPlayers from '../app';
 
-test('healthy healthbar', () => {
-    const player = {name: 'Маг', health: 90};
+test('SortPlayers sort', () => {
+    const players = [
+        {name: 'мечник', health: 10},
+        {name: 'маг', health: 100},
+        {name: 'лучник', health: 80},
+        {name: 'паладин', health: 35},
+        {name: 'чародей', health: 83},
+      ];
 
-    const result = HealthBar(player);
-    expect(result).toBe('healthy');
-});
-
-test('wounded healthbar', () => {
-    const player = {name: 'Маг', health: 45};
-
-    const result = HealthBar(player);
-    expect(result).toBe('wounded');
-});
-
-test('critical healthbar', () => {
-    const player = {name: 'Маг', health: 10};
-
-    const result = HealthBar(player);
-    expect(result).toBe('critical');
+    const result = SortPlayers(players);
+    expect(result).toEqual([
+        {name: 'маг', health: 100},
+        {name: 'чародей', health: 83},
+        {name: 'лучник', health: 80},
+        {name: 'паладин', health: 35},
+        {name: 'мечник', health: 10}
+    ])
 });

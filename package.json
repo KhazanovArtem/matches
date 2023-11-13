@@ -1,5 +1,5 @@
 {
-  "name": "clean-function",
+  "name": "matches",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/KhazanovArtem/clean-functions.git"
+    "url": "git+ssh://git@github.com:KhazanovArtem/matches.git"
   },
   "author": "LowShilla",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KhazanovArtem/clean-functions/issues"
+    "url": "https://github.com/KhazanovArtem/matches/issues"
   },
-  "homepage": "https://github.com/KhazanovArtem/clean-functions#readme",
+  "homepage": "https://github.com/KhazanovArtem/matches#readme",
   "devDependencies": {
     "@babel/cli": "^7.23.0",
     "@babel/core": "^7.23.3",
